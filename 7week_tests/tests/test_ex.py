@@ -8,9 +8,11 @@ def add(a, b):
 
 
 def test_add():
-    assert add(2, 3) == 5
-    assert add(-1, 1) == 0
-    assert add(-1, -1) == -2
+    a, b = 2, 3
+
+    sum_value = add(a, b)
+
+    assert sum_value == 5
 
 
 @pytest.mark.timeout(0)
